@@ -1,6 +1,11 @@
 use bevy::prelude::*;
 
-#[derive(Resource)]
+#[derive(Component)]
+pub struct Player {
+    pub camera: Entity,
+}
+
+#[derive(Component)]
 pub struct View {
     pub yaw: f32,
     pub pitch: f32,
